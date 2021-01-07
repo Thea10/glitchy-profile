@@ -1,0 +1,59 @@
+$leftBg: #bd0f4d;
+$rightBg: #cb2964;
+$shadow: #960f40;
+$textLinks: #fbf0f4;
+$iconLinks: #ffffff;
+$hoverLinks: #e6a5bd;
+
+$screen-xxsm-max: 375px;
+$screen-xsm-max: 475px;
+$screen-sm-max: 575px;
+$screen-md-max: 767px;
+$screen-lg-max: 991px;
+$screen-xl-max: 1199px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin xxsm-max {
+    @media (max-width: #{$screen-xxsm-max}) {
+        @content;
+    }
+}
+
+@mixin xsm-max {
+    @media (max-width: #{$screen-xsm-max}) {
+        @content;
+    }
+}
+
+@mixin sm-max {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md-max {
+    @media(max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin sm-min {
+    @media(min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+@mixin md-min {
+    @media(min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@mixin lg-min {
+    @media(min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
